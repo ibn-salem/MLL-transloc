@@ -55,3 +55,13 @@ done
 mkdir -p Mifsud2015
 wget -P Mifsud2015 http://www.ebi.ac.uk/arrayexpress/files/E-MTAB-2323/E-MTAB-2323.additional.1.zip
 unzip Mifsud2015/E-MTAB-2323.additional.1.zip -d Mifsud2015
+
+#=======================================================================
+# CTCF motifs from JASPAR
+#=======================================================================
+mkdir -p JASPAR2018
+
+# download TSV file for CTCF motifs in hg19
+wget -P JASPAR2018 http://expdata.cmmt.ubc.ca/JASPAR/downloads/UCSC_tracks/2018/hg19/tsv/MA0139.1.tsv.gz
+gunzip JASPAR2018/MA0139.1.tsv.gz
+
